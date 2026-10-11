@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.StudyTrack" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/blue_dark</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="StudyTrackButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="StudyTrackOutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <style name="StudyTrackInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusBottomStart">10dp</item>
+        <item name="boxCornerRadiusBottomEnd">10dp</item>
+    </style>
+</resources>
