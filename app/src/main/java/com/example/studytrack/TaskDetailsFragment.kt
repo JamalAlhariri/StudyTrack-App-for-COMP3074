@@ -64,7 +64,7 @@ class TaskDetailsFragment : Fragment() {
             task.dueDate = dueDate.text.toString().trim()
             task.priority = priority.selectedItem.toString()
             task.completed = completed.isChecked
-
+            TaskStore.updateTask(task)
             Toast.makeText(requireContext(), "Task updated", Toast.LENGTH_SHORT).show()
             activity.showTaskList()
         }

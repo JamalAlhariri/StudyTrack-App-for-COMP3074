@@ -31,7 +31,12 @@ class TaskListFragment : Fragment() {
         adapter = TaskAdapter(
             TaskStore.tasks.sortedBy { it.dueDate },
             onTaskClick = { task -> activity.showTaskDetails(task.id) },
-            onCompletedChange = { task, completed -> task.completed = completed }
+
+            onCompletedChange = { task, completed ->
+                task.completed = completed
+                TaskStore.updateTask(task)
+            }
+
         )
         recycler.adapter = adapter
 

@@ -52,9 +52,9 @@ class CoursesFragment : Fragment() {
             if (name.isEmpty()) {
                 Toast.makeText(requireContext(), "Enter a course name", Toast.LENGTH_SHORT).show()
             } else {
-                if (!TaskStore.courses.contains(name)) {
-                    TaskStore.courses.add(name)
-                }
+
+                TaskStore.addCourse(name)
+
                 courseName.setText("")
                 refreshCourses()
             }

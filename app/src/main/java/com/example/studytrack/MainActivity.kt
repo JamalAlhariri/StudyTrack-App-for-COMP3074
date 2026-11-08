@@ -10,9 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        if (savedInstanceState == null) {
+
+        TaskStore.load(this) {
             showDashboard()
         }
+
     }
 
     private fun openFragment(fragment: Fragment) {
